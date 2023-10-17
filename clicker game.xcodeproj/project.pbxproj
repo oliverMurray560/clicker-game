@@ -17,6 +17,7 @@
 		4C1DE37D2ACDA9D70093BD24 /* clicker_gameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1DE37C2ACDA9D70093BD24 /* clicker_gameTests.swift */; };
 		4C1DE3872ACDA9D70093BD24 /* clicker_gameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1DE3862ACDA9D70093BD24 /* clicker_gameUITests.swift */; };
 		4C1DE3892ACDA9D70093BD24 /* clicker_gameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1DE3882ACDA9D70093BD24 /* clicker_gameUITestsLaunchTests.swift */; };
+		4CDDCE062AD804B100A3DEDA /* ViewControllerShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDDCE052AD804B100A3DEDA /* ViewControllerShop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		4C1DE3822ACDA9D70093BD24 /* clicker gameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "clicker gameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C1DE3862ACDA9D70093BD24 /* clicker_gameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clicker_gameUITests.swift; sourceTree = "<group>"; };
 		4C1DE3882ACDA9D70093BD24 /* clicker_gameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clicker_gameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4CDDCE052AD804B100A3DEDA /* ViewControllerShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerShop.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				4C1DE3642ACDA9D60093BD24 /* SceneDelegate.swift */,
 				4C1DE3662ACDA9D60093BD24 /* ViewController.swift */,
 				4C1DE3682ACDA9D60093BD24 /* Main.storyboard */,
+				4CDDCE052AD804B100A3DEDA /* ViewControllerShop.swift */,
 				4C1DE36E2ACDA9D70093BD24 /* Assets.xcassets */,
 				4C1DE3702ACDA9D70093BD24 /* LaunchScreen.storyboard */,
 				4C1DE3732ACDA9D70093BD24 /* Info.plist */,
@@ -264,6 +267,7 @@
 				4C1DE3672ACDA9D60093BD24 /* ViewController.swift in Sources */,
 				4C1DE3632ACDA9D60093BD24 /* AppDelegate.swift in Sources */,
 				4C1DE3652ACDA9D60093BD24 /* SceneDelegate.swift in Sources */,
+				4CDDCE062AD804B100A3DEDA /* ViewControllerShop.swift in Sources */,
 				4C1DE36D2ACDA9D60093BD24 /* clicker_game.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
