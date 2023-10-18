@@ -31,6 +31,18 @@ class ViewControllerShop: UIViewController {
             delegate.minus(amount: 10)
             pointsLabel2.text = String(points)
         }
+        else{
+            let alert = UIAlertController(title: "Errror", message: "Not Enough Money", preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+            
+            alert.addAction(okAction)
+            
+            present(alert, animated: true, completion: nil)
+            
+        }
+        
+        
     }
     
     @IBAction func shop2(_ sender: Any) {
@@ -43,6 +55,19 @@ class ViewControllerShop: UIViewController {
             pointsLabel2.text = String(points)
             
         }
+        else{
+            let alert = UIAlertController(title: "Errror", message: "Not Enough Money", preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+            
+            alert.addAction(okAction)
+            
+            present(alert, animated: true, completion: nil)
+            
+            
+        }
+        
+        
         
     }
     
@@ -57,6 +82,15 @@ class ViewControllerShop: UIViewController {
             
             
             
+        }
+        else{
+            let alert = UIAlertController(title: "Errror", message: "Not Enough Money", preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+            
+            alert.addAction(okAction)
+            
+            present(alert, animated: true, completion: nil)
         }
         
     }

@@ -36,6 +36,10 @@ class ViewController: UIViewController, ViewControllerDelegate {
     @IBOutlet weak var pointsLabel: UILabel!
     var factor : Double = 1
     var points : Double = 0
+    var total : Double = 0
+    var check = 1
+    var clickCounter : Int = 1
+    var check2 : Int = 1
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -48,7 +52,35 @@ class ViewController: UIViewController, ViewControllerDelegate {
     
     @IBAction func clickAction(_ sender: Any) {
         points += 1 * factor
+        total += 1 * factor
+        
         pointsLabel.text = String(points)
+        
+        
+        
+        if total >= 10000 && check == 1{
+            let alert = UIAlertController(title: "Congrats", message: "You've generated 10,000 total points", preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+            
+            alert.addAction(okAction)
+            
+            present(alert, animated: true, completion: nil)
+            check = 0
+        }
+        
+        if clickCounter >= 1000 && check2 == 1{
+            let alert = UIAlertController(title: "Congrats", message: "You've clicked 1000 times", preferredStyle: .alert)
+            
+            let okAction = UIAlertAction(title: "ok", style: .default, handler: nil)
+            
+            alert.addAction(okAction)
+            
+            present(alert, animated: true, completion: nil)
+            check2 = 0
+        }
+        
+        
     }
     
     
