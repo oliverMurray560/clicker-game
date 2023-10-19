@@ -11,6 +11,7 @@ protocol ViewControllerDelegate{
     func upgrade(percent: Double)
     func minus(amount: Double)
     func show() -> Double
+    func add(amount: Double)
 }
 
 
@@ -18,6 +19,10 @@ protocol ViewControllerDelegate{
 import UIKit
 
 class ViewController: UIViewController, ViewControllerDelegate {
+    func add(amount: Double) {
+        points = points + amount
+    }
+    
     
     
     func show() -> Double {

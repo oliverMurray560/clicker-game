@@ -95,6 +95,36 @@ class ViewControllerShop: UIViewController {
         
     }
     
+    @IBAction func gambleAction(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Warning", message: "Do you want to risk all your money?", preferredStyle: .alert)
+        
+        let noAction = UIAlertAction(title: "no", style: .default, handler: nil)
+        let yesAction = UIAlertAction(title: "yes", style: .default) { action in
+            let rand = Int.random(in: 1...2)
+            if rand == 1{
+                self.delegate.minus(amount: self.points)
+                self.points = 0
+                
+            }
+            else{
+                
+                self.delegate.add(amount: self.points)
+                self.points = self.points * 2
+                
+                
+            }
+            self.pointsLabel2.text = String(self.points)
+            
+        }
+        
+        alert.addAction(yesAction)
+        alert.addAction(noAction)
+        
+        present(alert, animated: true, completion: nil)
+        
+        
+    }
     
     
     

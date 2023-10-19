@@ -101,6 +101,15 @@
                                     <action selector="shop3:" destination="pUk-l0-scv" eventType="touchUpInside" id="iWW-ZN-OMM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PdZ-jR-ylk">
+                                <rect key="frame" x="33" y="378" width="83" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Gamble"/>
+                                <connections>
+                                    <action selector="gambleAction:" destination="pUk-l0-scv" eventType="touchUpInside" id="E0T-6b-LeJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="w93-9D-UwM"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
